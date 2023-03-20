@@ -1,9 +1,19 @@
-body{
-    background-color: #b6d2e3;
+.bg-custom{
     margin: 0;
+    background-color: #f0f2f5;
+    
 }
 
+.content{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding:20px;
+    text-align: center;   
+    margin-top: 5%;
+}
 .login{
+    display: block;
     background-color: #ffff;
     margin-top: 20px;
     margin-left: auto;
@@ -12,19 +22,51 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 497px;
-    width: 435px;
+    height: 325px;
+    width: 432px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    text-align: center;
+   
+    margin-bottom: auto;
 }
+
+
+.test{
+
+    justify-self: center;
+    align-self: center;
+    margin-left: auto;
+  
+
+}
+.text2{
+    display: flex;
+}
+
+
+
+.imagine{
+    align-self: center;
+    justify-self: center;
+   
+    
+    
+}
+.logo-fb img{
+    display:flex;
+    margin-left: -70px;
+  
+    
+}
+
+
 
 .login input{
     margin: 0 auto 10px;
     border-radius: 5%;
-    width: 270px;
+    width: 400px;
     height: 50px;
-    text-align: center;
+    
 }
 
 .login form{
@@ -33,11 +75,10 @@ body{
 }
 
 #btn-login{
-    background-color: #1877f2;
     color: white;
     cursor: pointer;
     height: 50px;
-    width: 270px;
+    width: 400px;
     border-radius: 5px;
     text-decoration: none;
 }
@@ -45,22 +86,43 @@ body{
 .login input:focus{
     box-shadow: none;
     border-color:#1877f2;
+    
 }
 
 .login hr{
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
+    width: 350px;
 }
 .logare{
     display: flex;
     flex-direction: column;
 }
 .content img{
+   
     height: 80px;
     width: 310px;
 }
-.content{
-    text-align: center;
-   
+
+
+    
+    @media (max-width  :868px )
+{
+   .content
+    {
+        
+        flex-direction:column;
+    }
+    .logo-fb img{
+        margin: 0;
+    }
+    .test{
+        margin:0;
+    }
+    .text2{
+        display: block;
+
+    }
+
+
 }
