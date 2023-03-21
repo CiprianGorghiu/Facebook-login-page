@@ -73,7 +73,11 @@
     margin: 0;
     padding: 0;
 }
-
+#btn-create{
+    background-color: #36a420;
+    height: 55px;
+    width: 200px;
+}
 #btn-login{
     color: white;
     cursor: pointer;
@@ -124,5 +128,33 @@
 
     }
 
+
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.modal-header h1{
+    display: flex;
+}
+.modal-header p{
+    display: flex;
+}
+
+
+
+.modal-body input{
+    margin-top: 10px;
+}
+.modal-dialog{
+    width: 540px;
+}
+
+
+@media (max-width  : 767px)
+    {
+       
 
 }
