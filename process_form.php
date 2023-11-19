@@ -17,8 +17,6 @@ if (isset($_POST['submit'])) {
     die("Conexiunea a esuat: " . mysqli_connect_error());
   }
 
-  // pregatirea si executarea interogarii SQL
-  $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
   if (mysqli_query($conn, $sql)) {
     header("Location: error_page.html");
     exit;
